@@ -39,3 +39,55 @@ document.addEventListener("DOMContentLoaded", () => {
     }, 7000);
 
 });
+const videoCarousel = document.querySelector(".video-carousel");
+const videoCards = document.querySelectorAll(".video-card");
+const videoNext = document.querySelector(".video-next");
+const videoPrev = document.querySelector(".video-prev");
+
+let videoIndex = 0;
+
+function updateVideoSlider() {
+    videoCarousel.style.transform =
+        `translateX(-${videoIndex * 100}%)`;
+}
+
+videoNext.addEventListener("click", () => {
+    videoIndex = (videoIndex + 1) % videoCards.length;
+    updateVideoSlider();
+});
+
+videoPrev.addEventListener("click", () => {
+    videoIndex =
+        (videoIndex - 1 + videoCards.length) %
+        videoCards.length;
+    updateVideoSlider();
+});
+const biogasCarousel = document.querySelector(".biogas-carousel");
+const biogasCards = document.querySelectorAll(".biogas-card");
+
+const biogasPrev = document.querySelector(".biogas-prev");
+const biogasNext = document.querySelector(".biogas-next");
+
+let biogasIndex = 0;
+
+biogasNext.addEventListener("click", () => {
+    biogasIndex++;
+
+    if (biogasIndex >= biogasCards.length) {
+        biogasIndex = 0;
+    }
+
+    biogasCarousel.style.transform =
+        `translateX(-${biogasIndex * 100}%)`;
+});
+
+biogasPrev.addEventListener("click", () => {
+    biogasIndex--;
+
+    if (biogasIndex < 0) {
+        biogasIndex = biogasCards.length - 1;
+    }
+
+    biogasCarousel.style.transform =
+        `translateX(-${biogasIndex * 100}%)`;
+});
