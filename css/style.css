@@ -445,11 +445,12 @@ h2{
 =================================== */
 
 footer{
+    width:100%;
     background:#08162d;
-    color:white;
+    color:#fff;
     padding:50px 20px 25px;
+    margin:0;
 }
-
 .footer-grid{
     max-width:1200px;
     margin:auto;
@@ -492,6 +493,7 @@ footer hr{
     color:#94a3b8;
     font-size:.9rem;
 }
+
 
 /* ===================================
    TABLET
@@ -674,15 +676,11 @@ footer hr{
     }
 }
 body{
-    min-height:100vh;
-    display:flex;
-    flex-direction:column;
+    font-family:'Segoe UI',sans-serif;
+    background:#f5f8f5;
+    color:#333;
+    overflow-x:hidden;
 }
-
-footer{
-    margin-top:auto;
-}
-
 @media(max-width:768px){
 
     .nav-logo img{
