@@ -19,6 +19,30 @@ body{
     overflow-x:hidden;
 }
 
+html,
+body{
+    height:100%;
+}
+
+body{
+    min-height:100vh;
+    display:flex;
+    flex-direction:column;
+}
+
+footer{
+    margin-top:auto;
+    width:100%;
+}
+
+footer{
+    width:100vw;
+    background:#08162d;
+    color:#fff;
+    padding:50px 20px 25px;
+    margin-top:auto;
+}
+
 /* ===================================
    HERO
 =================================== */
@@ -445,11 +469,11 @@ h2{
 =================================== */
 
 footer{
-    width:100%;
+    width:100vw;
     background:#08162d;
     color:#fff;
     padding:50px 20px 25px;
-    margin:0;
+    margin-top:auto;
 }
 .footer-grid{
     max-width:1200px;
