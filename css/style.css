@@ -989,3 +989,117 @@ footer{
     object-fit:cover;
 }
 
+/* ==========================
+   VIDEOS SECTION
+========================== */
+
+.videos{
+    background:#08162d;
+    padding:100px 6%;
+}
+
+.videos h2{
+    color:#4ade80;
+    margin-bottom:40px;
+}
+
+.video-card{
+    background:#0f1f3d;
+    border:1px solid rgba(255,255,255,.08);
+    border-radius:24px;
+    overflow:hidden;
+
+    box-shadow:
+        0 20px 50px rgba(0,0,0,.35);
+}
+
+.video-info{
+    padding:30px;
+}
+
+.video-info h3{
+    color:#4ade80;
+    margin-bottom:12px;
+    font-size:1.4rem;
+}
+
+.video-info p{
+    color:#cbd5e1;
+    line-height:1.8;
+}
+
+/* ==========================
+   BIOGAS SECTION
+========================== */
+
+.biogas{
+    background:
+    linear-gradient(
+        180deg,
+        #0a1730 0%,
+        #08162d 100%
+    );
+
+    padding:100px 6%;
+}
+
+.biogas h2{
+    color:#4ade80;
+    margin-bottom:40px;
+}
+
+.biogas-card{
+    background:#0f1f3d;
+    border-radius:24px;
+    overflow:hidden;
+
+    border:1px solid rgba(255,255,255,.08);
+
+    box-shadow:
+        0 20px 50px rgba(0,0,0,.35);
+}
+
+.biogas-card h3{
+    color:#4ade80;
+    padding:24px 24px 10px;
+}
+
+.biogas-card p{
+    color:#cbd5e1;
+    padding:0 24px 24px;
+    line-height:1.8;
+}
+
+/* ==========================
+   MOBILE SPACING
+========================== */
+
+@media(max-width:768px){
+
+    section{
+        padding:90px 24px;
+    }
+
+    .about,
+    .services,
+    .projects,
+    .biogas,
+    .videos,
+    .contact{
+        padding-left:24px;
+        padding-right:24px;
+    }
+
+    .about p{
+        padding:28px;
+    }
+
+    .service-card{
+        padding:28px;
+    }
+
+    .video-info,
+    .contact-card{
+        padding:24px;
+    }
+}
